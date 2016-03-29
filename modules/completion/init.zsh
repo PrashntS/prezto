@@ -52,12 +52,12 @@ zstyle ':completion:*:*:*:*:*' menu select
 zstyle ':completion:*:matches' group 'yes'
 zstyle ':completion:*:options' description 'yes'
 zstyle ':completion:*:options' auto-description '%d'
-zstyle ':completion:*:corrections' format ' %F{green}-- %d (errors: %e) --%f'
-zstyle ':completion:*:descriptions' format ' %F{yellow}-- %d --%f'
-zstyle ':completion:*:messages' format ' %F{purple} -- %d --%f'
-zstyle ':completion:*:warnings' format ' %F{red}-- no matches found --%f'
-zstyle ':completion:*:default' list-prompt '%S%M matches%s'
-zstyle ':completion:*' format ' %F{yellow}-- %d --%f'
+zstyle ':completion:*:corrections' format '%F{green}%f%K{green}%F{white} %d (errors: %e) %f%k%F{green}%f'
+zstyle ':completion:*:descriptions' format '%F{yellow}%f%K{yellow}%F{white} %d %f%k%F{yellow}%f'
+zstyle ':completion:*:messages' format '%F{purple}%f%K{purple}%F{white} %d %f%k%F{purple}%f'
+zstyle ':completion:*:warnings' format '%F{red}%f%K{red}%F{white} no matches found %f%k%F{red}%f'
+zstyle ':completion:*:default' list-prompt '%F{yellow}%f%K{yellow}%F{white} %M matches %f%k%F{yellow}%f'
+zstyle ':completion:*' format '%K{cyan}%F{black} %d %f%k%F{cyan}%f'
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' verbose yes
 
