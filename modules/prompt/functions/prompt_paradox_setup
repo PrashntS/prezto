@@ -148,7 +148,7 @@ function prompt_paradox_setup {
     'status' '%s%D%A%B%S%a%d%m%r%U%u'
 
   # Virtual Environment
-  zstyle ':prezto:module:python:info:virtualenv' format 'ⓔ  %v'
+  zstyle ':prezto:module:python:info:virtualenv' format '/%v'
   # Define prompts.
   PROMPT='${(e)$(prompt_paradox_build_prompt)}${editor_info[keymap]} '
   RPROMPT='%F{blue}$(legit_prompt_info)%f'
